@@ -25,4 +25,18 @@
         background: transparent linear-gradient(177deg, #213f72 0%, #19073b 82%);
         opacity: 1;
     }
+
+
+    &__form{
+        height: 100%;
+        padding: 5rem;
+
+        &--item{
+            display: grid;
+        }
+
+       &--label{
+
+       }
+    }
 }

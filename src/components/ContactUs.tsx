@@ -12,8 +12,20 @@ function ContactUs() {
                         message!
                     </h1>
 
-                    <label htmlFor='first_name'>First Name</label>
-                    <input type='text' id='first_name' name='first_name' />
+                    <div className='contactUs__form--item'>
+                        <label
+                            htmlFor='first_name'
+                            className='contactUs__form--label'
+                        >
+                            First Name
+                        </label>
+                        <input
+                            type='text'
+                            id='first_name'
+                            name='first_name'
+                            className='contactUs__form--input'
+                        />
+                    </div>
                 </form>
             </div>
         </div>
