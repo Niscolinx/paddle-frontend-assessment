@@ -6,17 +6,16 @@
     box-sizing: inherit;
 }
 
-
 html,
 body {
-    overflow-x: hidden;
     position: relative;
     line-height: 1.6;
     font-weight: 400;
     font-family: $font-Poppins;
     box-sizing: border-box;
+    width: 1920px;
+    min-height: 1290px;
+    background: linear-gradient(to bottom, #210045, #0c0123 40%);
+    margin: 0 auto;
 }
 
-body {
-    background: linear-gradient(to bottom, #210045, #0c0123 40%);
-}

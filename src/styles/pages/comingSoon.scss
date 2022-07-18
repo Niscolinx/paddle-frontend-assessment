@@ -1,7 +1,8 @@
 .comingSoon {
     grid-column: 1 / -1;
-    height: 65vh;
+    //height: 65vh;
     display: grid;
+
     //justify-content: center;
     //position: relative;
 
@@ -49,5 +50,128 @@
         }
     }
 
-   
+    &__rapper {
+        position: relative;
+        z-index: 500;
+        display: grid;
+        align-content: start;
+        max-width: 49rem;
+        justify-items: center;
+        text-align: center;
+        gap: 2rem;
+        margin: 0 auto;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    &__header {
+        font-weight: bold;
+        font-size: 3rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__text {
+        font-weight: 200;
+        padding: 0 6rem;
+
+        span {
+            font-weight: 500;
+        }
+    }
+
+    &__timer {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 2rem;
+
+        &--item {
+            display: grid;
+            background-color: white;
+            color: black;
+            width: 5.5rem;
+            height: 6.3rem;
+            border-radius: 0.5rem;
+
+            .span-1 {
+                font-size: 2.9rem;
+                font-weight: 500;
+            }
+        }
+    }
+
+    &__form {
+        width: 100%;
+        display: grid;
+        max-width: 41rem;
+        justify-content: center;
+        gap: 2rem;
+
+        &--1 {
+            display: flex;
+            gap: 2rem;
+            width: 32rem;
+        }
+
+        &--input {
+            width: 100%;
+            outline: none;
+            border: none;
+            border-bottom: 2.5px solid rgb(115 91 114 / 62%);
+            background-color: inherit;
+            color: white;
+            padding: 0.5rem 0.5rem;
+        }
+        &--input::placeholder {
+            font-family: $font-Poppins;
+            text-align: left;
+            color: #707070;
+            text-transform: capitalize;
+            font-size: 14px;
+        }
+
+        &--2 {
+            width: 100%;
+            position: relative;
+            display: flex;
+        }
+
+        &--input-email {
+            padding: 1rem 2rem;
+            border-radius: 2rem;
+            background-color: white;
+            color: black;
+            outline: none;
+            border: none;
+            width: 65%;
+        }
+
+        &--input-email::placeholder {
+            font-weight: 200;
+            font-size: 1rem;
+            font-family: $font-Poppins;
+            color: black;
+        }
+
+        &--btn {
+            text-transform: uppercase;
+            padding: 1rem 2rem;
+            border-radius: 2rem;
+            background-color: $color-1;
+            color: white;
+            outline: none;
+            border: none;
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    &__contactUs{
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        z-index: 2;
+    }
 }
