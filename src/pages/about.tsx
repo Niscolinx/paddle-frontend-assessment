@@ -31,7 +31,13 @@ const about = () => {
             </section>
 
             <section className='about__section2'>
-          
+
+            <div className="about__section2--1">
+              
+            </div>
+            <div className="about__section2--2">
+
+            </div>
             </section>
         </div>
     )
