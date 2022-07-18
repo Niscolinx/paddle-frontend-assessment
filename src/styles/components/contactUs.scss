@@ -5,6 +5,29 @@
     height: 100%;
     width: 100%;
 
+    &__action {
+        z-index: 5;
+        position: absolute;
+        left: 47%;
+        top: 2rem;
+        width: 104px;
+        height: 102px;
+        padding: 2rem;
+        background: white;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        border-radius: 100%;
+
+        &--arrow {
+           
+            border-radius: 100%;
+            display: flex;
+            color: black;
+            font-size: 2rem;
+        }
+    }
+
     &__left {
         //background-color: red;
         background: #eddbf021;
@@ -17,8 +40,8 @@
 
     &__ellipse {
         position: absolute;
-        right: 3rem;
-        top: 20rem;
+        right: 13rem;
+        top: 14rem;
         width: 212px;
         height: 218px;
         border-radius: 100%;
@@ -27,30 +50,72 @@
         z-index: 1;
     }
 
-
-    &__form{
+    &__form {
         height: 100%;
-        padding: 5rem;
-       display: grid;
-       justify-content: center;
-       align-content: flex-start;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        gap: 3rem;
+        position: relative;
+        z-index: 2;
 
-        &--header{
+        &--header {
             font-size: 2.5rem;
             font-weight: 500;
-           // padding: 0 .2rem;
             text-align: center;
             width: 44rem;
             display: flex;
             flex-direction: column;
         }
 
-        &--content{
+        &--content {
             display: grid;
+            gap: 1rem;
         }
 
-       &--label{
+        &--label {
+            font-size: 1.3rem;
+            font-weight: 300;
+        }
 
-       }
+        &--input {
+            padding: 2rem 3rem;
+            border-radius: 1rem;
+            font-size: 1.3rem;
+        }
+
+        &--input::placeholder {
+            color: black;
+            opacity: 0.5;
+            font-size: 1.3rem;
+            font-weight: 400;
+            font-family: $font-Poppins;
+        }
+
+        &--textarea {
+            border-radius: 1rem;
+            padding: 1rem 3rem;
+            font-size: 1.3rem;
+            font-family: $font-Poppins;
+        }
+        &--textarea::placeholder {
+            color: black;
+            opacity: 0.5;
+            font-size: 1.3rem;
+            font-weight: 400;
+            font-family: $font-Poppins;
+        }
+
+        &--btn {
+            background-color: $color-1;
+            text-transform: uppercase;
+            border-radius: 3rem;
+            padding: 2rem 4rem;
+            color: white;
+            justify-self: start;
+            font-size: 1.6rem;
+            border: none;
+            outline: none;
+        }
     }
 }
