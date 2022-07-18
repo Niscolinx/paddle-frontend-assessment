@@ -1,4 +1,5 @@
 import React from 'react'
+import Dots from '../components/Dots'
 
 const about = () => {
     return (
@@ -25,19 +26,28 @@ const about = () => {
 
             <section className='about__section1'>
                 <p className='about__section1--content'>
-                        Metricks was developed because just like you, we needed
-                        a product that could give us <span>good value</span>
+                    Metricks was developed because just like you, we needed a
+                    product that could give us <span>good value</span>
                 </p>
             </section>
 
             <section className='about__section2'>
-
-            <div className="about__section2--1">
-              
-            </div>
-            <div className="about__section2--2">
-
-            </div>
+                <div className='about__section2--1'>
+                    <div className='about__section2--1__title'>
+                        <div className='title-1'>
+                            <span className='title-1__number'>01</span>
+                            <span className='title-1__dash'></span>
+                        </div>
+                        <div className='title__2'>WHY US?</div>
+                    </div>
+                    <p className='about__section2--1__text'>
+                        We pride ourselves in our ability to innovate and create
+                        world-class tools that provide reliable and efficient
+                        touchpoints between advertisers and affiliates.
+                    </p>
+                    <Dots/>
+                </div>
+                <div className='about__section2--2'></div>
             </section>
         </div>
     )

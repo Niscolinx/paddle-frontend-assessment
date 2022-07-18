@@ -1,0 +1,13 @@
+.dots {
+    width: 334px;
+    height: 136px;
+    position: absolute;
+
+    &__item {
+        width: 6px;
+        height: 6px;
+        color: white;
+        //background: white;
+        display: inline-block;
+    }
+}
