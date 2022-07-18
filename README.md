@@ -21,5 +21,10 @@ yarn dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 
+## Specifications of this app
 
+```
+Viewport width: 1920
+Viewport height: 1290
+```
 

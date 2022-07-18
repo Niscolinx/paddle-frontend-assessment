@@ -3,6 +3,7 @@
     background: $linear-gradient;
     color: $color-primary;
     margin: 0 auto;
+    min-height: 1290px;
     position: relative;
     grid-template-rows: min-content;
     grid-template-columns:
@@ -12,10 +13,4 @@
             [col-start] minmax(min-content, 14rem) [col-end]
         )
         [center-end] 4rem [full-end];
-
 }
-
-
-
-
-

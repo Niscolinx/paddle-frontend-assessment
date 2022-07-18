@@ -1,10 +1,7 @@
 .comingSoon {
     grid-column: 1 / -1;
-    //height: 65vh;
     display: grid;
-
-    //justify-content: center;
-    //position: relative;
+  
 
     &__ellipse {
         position: absolute;
@@ -40,7 +37,7 @@
         &--3 {
             border-radius: 100%;
             position: absolute;
-            top: 50rem;
+            top: 60rem;
             left: 35rem;
             width: 183px;
             height: 187px;
@@ -52,7 +49,7 @@
 
     &__rapper {
         position: relative;
-        z-index: 500;
+        z-index: 30;
         display: grid;
         align-content: start;
         max-width: 49rem;
@@ -172,6 +169,6 @@
         left: 0;
         right: 0;
         height: 100vh;
-        z-index: 2;
+        z-index: 40;
     }
 }

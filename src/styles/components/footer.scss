@@ -2,6 +2,7 @@
     display: grid;
     justify-content: center;
     justify-items: center;
+    align-content: flex-end;
     grid-column: center-start / center-end;
     padding: 2rem 0;
 
@@ -53,7 +54,7 @@
     z-index: 20;
     padding-top: 10rem;
     margin: 0 10rem;
-    clip-path: circle(100vh at 50% 109vh);
+    clip-path: circle(100vh at 50% 128vh);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
