@@ -1,13 +1,29 @@
 .dots {
     width: 334px;
     height: 136px;
-    position: absolute;
+    position: relative;
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
 
     &__item {
-        width: 6px;
-        height: 6px;
-        color: white;
-        //background: white;
-        display: inline-block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        display: block;
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: white;
+            width: 100%;
+            height: 100%;
+            transform: scale(0.1);
+            border-radius: 50%;
+        }
     }
+
+
 }
