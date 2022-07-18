@@ -45,6 +45,38 @@ function Dots() {
         <div className="dots__item"></div>
         <div className="dots__item"></div>
         <div className="dots__item"></div>
+        <div className="dots__item"></div>
+        <div className="dots__item"></div>
+        <div className="dots__item"></div>
+        <div className="dots__item"></div>
+        <div className="dots__item"></div>
+        <div className="dots__item"></div>
+        <div className="dots__item"></div>
+        <div className="dots__item"></div>
+        <div className="dots__item"></div>
+        <div className="dots__item"></div>
+        <div className="dots__item"></div>
+        <div className="dots__item"></div>
+        <div className="dots__item"></div>
+        <div className="dots__item"></div>
+        <div className="dots__item"></div>
+        <div className="dots__item"></div>
+        <div className="dots__item"></div>
+        <div className="dots__item"></div>
+        <div className="dots__item"></div>
+        <div className="dots__item"></div>
+        <div className="dots__item"></div>
+        <div className="dots__item"></div>
+        <div className="dots__item"></div>
+        <div className="dots__item"></div>
+        <div className="dots__item"></div>
+        <div className="dots__item"></div>
+        <div className="dots__item"></div>
+        <div className="dots__item"></div>
+        <div className="dots__item"></div>
+        <div className="dots__item"></div>
+        <div className="dots__item"></div>
+        <div className="dots__item"></div>
     </div>
   )
 }

@@ -100,8 +100,93 @@
             letter-spacing: 1.28px;
             font-size: 4rem;
 
-            span{
+            span {
                 font-weight: 500;
+            }
+        }
+    }
+
+    &__section2 {
+        display: grid;
+        grid-column: 1 / -1;
+        grid-template-columns: 1fr 1fr;
+
+        .section2-1 {
+            display: grid;
+            padding-left: 10rem;
+            justify-content: center;
+            align-items: flex-end;
+
+            &__rapper{
+                display: grid;
+                gap: 3rem;
+                align-self: center;
+            }
+
+            &__title {
+                display: flex;
+                gap: 2rem;
+                position: relative;
+
+                .title__1 {
+                    display: grid;
+                    align-content: center;
+
+                    &--number {
+                        font-weight: 400;
+                        position: absolute;
+                        top: -2rem;
+                        left: 1rem;
+                    }
+                    &--dash {
+                        position: absolute;
+                        width: 6rem;
+                        top: 13px;
+                        height: 2px;
+                        background-color: white;
+                    }
+                }
+
+                .title__2 {
+                    letter-spacing: 1.2px;
+                    font-weight: 400;
+                    margin-left: 5rem;
+                }
+            }
+
+            &__text {
+                width: 587px;
+                height: 175px;
+                font-size: 1.3rem;
+                font-weight: 300;
+                line-height: 3rem;
+                padding-right: 3rem;
+            }
+        }
+
+        .section2-2 {
+            position: relative;
+
+            display: grid;
+            width: 960px;
+            height: 627px;
+            z-index: 3;
+
+            &__container {
+                position: relative;
+                z-index: 2;
+                background: #eddbf021;
+                backdrop-filter: blur(16px);
+            }
+            &__subContainer {
+                position: absolute;
+                grid-column: 6 / 9;
+                z-index: 1;
+                left: 10rem;
+                top: 10rem;
+                width: 20rem;
+                height: 20rem;
+                background: linear-gradient(180deg, #213f72 0%, #19073b 100%);
             }
         }
     }

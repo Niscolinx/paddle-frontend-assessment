@@ -2,9 +2,9 @@
     width: 334px;
     height: 136px;
     position: relative;
-    background-color: red;
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
 
     &__item {
         position: relative;
