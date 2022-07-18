@@ -1,0 +1,22 @@
+.main {
+    display: grid;
+    background: $linear-gradient;
+    color: $color-primary;
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+    grid-template-rows: min-content;
+    grid-template-columns:
+        [full-start] 4rem
+        [center-start] repeat(
+            12,
+            [col-start] minmax(min-content, 14rem) [col-end]
+        )
+        [center-end] 4rem [full-end];
+
+}
+
+
+
+
+
