@@ -4,9 +4,12 @@ import { BsYoutube } from 'react-icons/bs'
 import { AiFillFacebook, AiFillLinkedin, AiFillInstagram } from 'react-icons/ai'
 import { FaTwitterSquare } from 'react-icons/fa'
 
-function Footer() {
+function Footer({isComingSoon}: {isComingSoon: boolean}) {
     return (
-        <footer className='footer footer__glassmorphism'>
+        <footer
+            className='footer'
+            style={isComingSoon ? { display: 'none' } : { display: 'grid' }}
+        >
             <ul className='footer__links'>
                 <li className='footer__links--item footer__links--item-active'>
                     <Link href='/'>

@@ -1,13 +1,12 @@
 import Link from 'next/link'
 import React from 'react'
 
-type HeaderProps = {
-    toShow?: () => void
-}
-
-const Header = ({ toShow }: HeaderProps) => {
+const Header = ({isComingSoon}: {isComingSoon: boolean}) => {
     return (
-        <header className='header'>
+        <header
+            className='header'
+            style={isComingSoon ? { display: 'none' } : { display: 'flex' }}
+        >
             <div className='header__logo'>
                 <Link href='/'>
                     <img src='logo-white.png' alt='' />
@@ -21,10 +20,7 @@ const Header = ({ toShow }: HeaderProps) => {
                 <li className='header__lists--item'>
                     <Link href='/blog'> Blog</Link>
                 </li>
-                <li
-                    className='header__lists--item header__lists--item-active'
-                    onClick={toShow}
-                >
+                <li className='header__lists--item header__lists--item-active'>
                     Contact Us
                 </li>
             </ul>

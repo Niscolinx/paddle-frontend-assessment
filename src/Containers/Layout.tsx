@@ -19,24 +19,12 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         }
     }, [router])
 
-
     return (
         <>
-            <div
-                style={
-                    isComingSoon ? { display: 'none' } : { display: 'block' }
-                }
-            >
-                <Header />
-            </div>
+            <Header isComingSoon={isComingSoon} />
             <div className='main'>{children}</div>
-            <div
-                style={
-                    isComingSoon ? { display: 'none' } : { display: 'block' }
-                }
-            >
-                <Footer />
-            </div>{' '}
+
+            <Footer isComingSoon={isComingSoon} />
         </>
     )
 }

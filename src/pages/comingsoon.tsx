@@ -1,10 +1,9 @@
 import React, { MouseEventHandler, useState } from 'react'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
 import ContactUs from '../components/ContactUs'
-import { Animated } from 'react-animated-css'
-import { AnimationOnScroll } from 'react-animation-on-scroll'
-
+import Link from 'next/link'
+import { AiFillFacebook, AiFillLinkedin, AiFillInstagram } from 'react-icons/ai'
+import { BsYoutube } from 'react-icons/bs'
+import { FaTwitterSquare } from 'react-icons/fa'
 
 export type Display = React.CSSProperties
 
@@ -18,23 +17,43 @@ function comingSoon() {
     }
 
     const toShow = () => {
-        setDisplay({visibility: 'visible'})
+        setDisplay({ visibility: 'visible' })
     }
 
     const toClose = () => {
-        setDisplay({visibility: 'hidden'})
+        setDisplay({ visibility: 'hidden' })
     }
 
     return (
         <>
             <div className='comingSoon'>
-                <Header toShow={toShow}/>
+                <header className='header'>
+                    <div className='header__logo'>
+                        <Link href='/'>
+                            <img src='logo-white.png' alt='' />
+                        </Link>
+                    </div>
+
+                    <ul className='header__lists'>
+                        <li className='header__lists--item'>
+                            <Link href='/about'> About Us</Link>
+                        </li>
+                        <li className='header__lists--item'>
+                            <Link href='/blog'> Blog</Link>
+                        </li>
+                        <li
+                            className='header__lists--item header__lists--item-active'
+                            onClick={toShow}
+                        >
+                            Contact Us
+                        </li>
+                    </ul>
+                </header>{' '}
                 <div className='comingSoon__ellipse'>
                     <div className='comingSoon__ellipse--1'></div>
                     <div className='comingSoon__ellipse--2'></div>
                     <div className='comingSoon__ellipse--3'></div>
                 </div>
-
                 <div className='comingSoon__rapper'>
                     <h1 className='comingSoon__header'>
                         Something awesome is coming soon
@@ -91,9 +110,49 @@ function comingSoon() {
                     </form>
                 </div>
             </div>
-           
+
             <ContactUs toClose={toClose} display={display} />
-            <Footer />
+
+            <footer className='footer footer__glassmorphism'>
+                <ul className='footer__links'>
+                    <li className='footer__links--item footer__links--item-active'>
+                        <Link href='/'>
+                            <BsYoutube />
+                        </Link>
+                    </li>
+                    <li className='footer__links--item'>
+                        <Link href='/'>
+                            <AiFillFacebook />
+                        </Link>
+                    </li>
+                    <li className='footer__links--item'>
+                        <Link href='/'>
+                            <AiFillLinkedin />
+                        </Link>
+                    </li>
+                    <li className='footer__links--item'>
+                        <Link href='/'>
+                            <AiFillInstagram />
+                        </Link>
+                    </li>
+                    <li className='footer__links--item'>
+                        <Link href='/'>
+                            <FaTwitterSquare />
+                        </Link>
+                    </li>
+                </ul>
+
+                <div className='footer__contracts'>
+                    <Link href='/'>Terms of services</Link>
+                    <Link href='/'>Privacy Policy</Link>
+                </div>
+                <div className='footer__copyright'>
+                    <p>
+                        Copyright 2021 @ Peddle Technologies. All Rights
+                        Reserved.
+                    </p>
+                </div>
+            </footer>
         </>
     )
 }
