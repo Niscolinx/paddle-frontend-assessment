@@ -1,3 +1,5 @@
+import Footer from "../components/Footer"
+import Header from "../components/Header"
 
 
 type LayoutProps = {
@@ -5,10 +7,13 @@ type LayoutProps = {
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
-    return (
+    return (<>
+    <Header/>
         <div className='main'>
             {children}
         </div>
+        <Footer/>
+    </>
     )
 }
 

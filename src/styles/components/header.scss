@@ -19,11 +19,17 @@
     &__lists {
         list-style: none;
         display: flex;
+
         &--item {
             margin: 0 1.5rem;
             padding: 1rem 2rem;
             text-transform: uppercase;
             cursor: pointer;
+
+            &:link {
+                text-decoration: none;
+                color: white;
+            }
 
             &-active {
                 background-color: $color-1;

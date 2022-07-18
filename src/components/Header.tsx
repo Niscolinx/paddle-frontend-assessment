@@ -1,10 +1,11 @@
+import Link from 'next/link'
 import React, { MouseEventHandler } from 'react'
 // import { ComingSoonContext } from '../pages/comingsoon'
 
 function Header({
-    toShow,
+    toShow
 }: {
-    toShow: () => void
+    toShow?: () => void
 }) {
     return (
         <header className='header'>
@@ -14,7 +15,7 @@ function Header({
 
             <ul className='header__lists'>
                 <li className='header__lists--item'>Abous Us</li>
-                <li className='header__lists--item'>Blog</li>
+                <li className='header__lists--item'> <Link href='/blog'> Blog</Link></li>
                 <li
                     className='header__lists--item header__lists--item-active'
                     onClick={toShow}
