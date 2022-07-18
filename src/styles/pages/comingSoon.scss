@@ -1,0 +1,53 @@
+.comingSoon {
+    grid-column: 1 / -1;
+    height: 65vh;
+    display: grid;
+    //justify-content: center;
+    //position: relative;
+
+    &__ellipse {
+        position: absolute;
+        z-index: 1;
+        height: 100vh;
+        left: 0;
+        right: 0;
+
+        &--1 {
+            position: absolute;
+            top: 15rem;
+            left: 20rem;
+            width: 140px;
+            height: 143px;
+            border-radius: 100%;
+            background: transparent
+                linear-gradient(177deg, #7f1e7b 0%, #19073b 82%);
+            opacity: 1;
+        }
+
+        &--2 {
+            position: absolute;
+            right: 3rem;
+            top: 20rem;
+            width: 104px;
+            height: 107px;
+            border-radius: 100%;
+            background: transparent
+                linear-gradient(177deg, #213f72 0%, #19073b 82%);
+            opacity: 1;
+        }
+
+        &--3 {
+            border-radius: 100%;
+            position: absolute;
+            top: 50rem;
+            left: 35rem;
+            width: 183px;
+            height: 187px;
+            background: transparent
+                linear-gradient(177deg, #7f4129 0%, #1c0c28 82%);
+            opacity: 1;
+        }
+    }
+
+   
+}
