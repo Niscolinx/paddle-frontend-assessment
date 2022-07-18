@@ -1,3 +1,13 @@
 .contactUs {
-    background-color: red;
+    display: grid;
+    
+    &__left{
+        background-color: red;
+
+    }
+
+    &_right{
+        background-color: blue;
+    }
+
 }
