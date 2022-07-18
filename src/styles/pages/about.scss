@@ -9,6 +9,7 @@
     &__header {
         height: 80vh;
         display: grid;
+        position: relative;
         grid-template-columns: repeat(
             12,
             [col-start] minmax(min-content, 14rem) [col-end]
@@ -24,18 +25,84 @@
 
             &-box {
                 position: absolute;
-                grid-column: 6 / 10;
+                grid-column: 6 / 9;
                 z-index: 1;
                 right: 10rem;
                 top: 10rem;
                 width: 30rem;
                 height: 40rem;
-                background: linear-gradient(180deg, #7f1e7b 0%, #1D0040 100%);
+                background: linear-gradient(180deg, #7f1e7b 0%, #1d0040 100%);
             }
         }
         &--2 {
+            position: absolute;
+            z-index: 3;
+            top: 25rem;
+            display: grid;
+            width: 926px;
+            height: 293px;
+            grid-column: 5 / 9;
+            margin-left: 5rem;
+
+            &__subTitle {
+                .span-1 {
+                    position: absolute;
+                    background: white;
+                    width: 5rem;
+                    height: 2px;
+                    left: 0;
+                    top: 47%;
+                }
+
+                .span-2 {
+                    font-size: 1.3rem;
+                    letter-spacing: 1.2px;
+                    margin-left: 6rem;
+                }
+            }
+
+            &__title {
+                font-size: 5.3rem;
+                display: grid;
+                justify-content: end;
+            }
         }
         &--3 {
+            width: 532px;
+            font-size: 1.3rem;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            font-weight: 200;
+            line-height: 3rem;
+        }
+        &--ellipse {
+            position: absolute;
+            right: 0;
+            top: 10rem;
+            border-radius: 100%;
+            width: 241px;
+            height: 246px;
+            background: transparent
+                linear-gradient(177deg, #213f72 0%, #1d0040 58%);
+        }
+    }
+
+    &__section1 {
+        margin: 10rem 0;
+        display: grid;
+        justify-content: center;
+        grid-column: 1 / -1;
+
+        &--content {
+            width: 1384px;
+
+            letter-spacing: 1.28px;
+            font-size: 4rem;
+
+            span{
+                font-weight: 500;
+            }
         }
     }
 }
