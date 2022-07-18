@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { MouseEventHandler } from 'react'
+// import { ComingSoonContext } from '../pages/comingsoon'
 
-function Header() {
+function Header({
+    toShow,
+}: {
+    toShow: () => void
+}) {
     return (
         <header className='header'>
             <div className='header__logo'>
@@ -10,7 +15,12 @@ function Header() {
             <ul className='header__lists'>
                 <li className='header__lists--item'>Abous Us</li>
                 <li className='header__lists--item'>Blog</li>
-                <li className='header__lists--item header__lists--item-active'>Contact Us</li>
+                <li
+                    className='header__lists--item header__lists--item-active'
+                    onClick={toShow}
+                >
+                    Contact Us
+                </li>
             </ul>
         </header>
     )

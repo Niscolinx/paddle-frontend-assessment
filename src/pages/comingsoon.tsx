@@ -1,16 +1,34 @@
-import React from 'react'
+import React, { MouseEventHandler, useState } from 'react'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import ContactUs from '../components/ContactUs'
+import { Animated } from 'react-animated-css'
+import { AnimationOnScroll } from 'react-animation-on-scroll'
+
+
+export type Display = React.CSSProperties
 
 function comingSoon() {
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const [display, setDisplay] = useState<Display>({
+        visibility: 'hidden',
+    })
+
+    const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault()
     }
+
+    const toShow = () => {
+        setDisplay({visibility: 'visible'})
+    }
+
+    const toClose = () => {
+        setDisplay({visibility: 'hidden'})
+    }
+
     return (
         <>
             <div className='comingSoon'>
-                <Header />
+                <Header toShow={toShow} />
                 <div className='comingSoon__ellipse'>
                     <div className='comingSoon__ellipse--1'></div>
                     <div className='comingSoon__ellipse--2'></div>
@@ -73,9 +91,8 @@ function comingSoon() {
                     </form>
                 </div>
             </div>
-            <div className='comingSoon__contactUs'>
-                <ContactUs />
-            </div>
+           
+            <ContactUs toClose={toClose} display={display} />
             <Footer />
         </>
     )

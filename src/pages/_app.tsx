@@ -2,6 +2,7 @@
 import type { AppProps } from 'next/app'
 import Layout from '../Containers/Layout'
 import '../styles/main.scss'
+import 'animate.css/animate.css' 
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
