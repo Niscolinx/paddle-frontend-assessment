@@ -53,9 +53,9 @@ const about = () => {
                 <div className='section2-2'>
                     <div className='section2-2__container'>
                         <div className='section2-2__title'>
-                            <div className='title-1'>
-                                <span className='title-1__number'>02</span>
-                                <span className='title-1__dash'></span>
+                            <div className='title__1'>
+                                <span className='title__1--number'>02</span>
+                                <span className='title__1--dash'></span>
                             </div>
                             <h3 className='title__2'>GROWING WITH YOU</h3>
                         </div>

@@ -117,7 +117,7 @@
             justify-content: center;
             align-items: flex-end;
 
-            &__rapper{
+            &__rapper {
                 display: grid;
                 gap: 3rem;
                 align-self: center;
@@ -166,15 +166,48 @@
 
         .section2-2 {
             position: relative;
-
-            display: grid;
-            width: 960px;
-            height: 627px;
             z-index: 3;
+
+            &__title {
+                display: flex;
+                gap: 2rem;
+                position: relative;
+
+                .title__1 {
+                    display: grid;
+                    align-content: center;
+
+                    &--number {
+                        font-weight: 400;
+                        position: absolute;
+                        top: -2rem;
+                        left: 1rem;
+                    }
+                    &--dash {
+                        position: absolute;
+                        width: 6rem;
+                        top: 13px;
+                        height: 2px;
+                        background-color: white;
+                    }
+                }
+
+                .title__2 {
+                    letter-spacing: 1.2px;
+                    font-weight: 400;
+                    margin-left: 5rem;
+                }
+            }
 
             &__container {
                 position: relative;
                 z-index: 2;
+                width: 960px;
+                display: grid;
+                justify-content: center;
+                align-content: center;
+                gap: 2rem;
+                height: 627px;
                 background: #eddbf021;
                 backdrop-filter: blur(16px);
             }
@@ -182,11 +215,19 @@
                 position: absolute;
                 grid-column: 6 / 9;
                 z-index: 1;
-                left: 10rem;
-                top: 10rem;
+                left: 12rem;
+                top: 5rem;
                 width: 20rem;
-                height: 20rem;
+                height: 22rem;
                 background: linear-gradient(180deg, #213f72 0%, #19073b 100%);
+            }
+
+            &__text {
+                width: 692px;
+                height: 179px;
+                font-weight: 300;
+                font-size: 1.3rem;
+                line-height: 3rem;
             }
         }
     }
