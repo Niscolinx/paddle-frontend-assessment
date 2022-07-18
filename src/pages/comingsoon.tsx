@@ -28,7 +28,7 @@ function comingSoon() {
     return (
         <>
             <div className='comingSoon'>
-                <Header toShow={toShow} />
+                <Header toShow={toShow}/>
                 <div className='comingSoon__ellipse'>
                     <div className='comingSoon__ellipse--1'></div>
                     <div className='comingSoon__ellipse--2'></div>

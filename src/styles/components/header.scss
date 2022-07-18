@@ -26,7 +26,8 @@
             text-transform: uppercase;
             cursor: pointer;
 
-            a:link {
+            a:link,
+            a:visited {
                 text-decoration: none;
                 color: white;
             }
