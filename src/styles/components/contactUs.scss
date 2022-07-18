@@ -24,14 +24,28 @@
         border-radius: 100%;
         background: transparent linear-gradient(177deg, #213f72 0%, #19073b 82%);
         opacity: 1;
+        z-index: 1;
     }
 
 
     &__form{
         height: 100%;
         padding: 5rem;
+       display: grid;
+       justify-content: center;
+       align-content: flex-start;
 
-        &--item{
+        &--header{
+            font-size: 2.5rem;
+            font-weight: 500;
+           // padding: 0 .2rem;
+            text-align: center;
+            width: 44rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--content{
             display: grid;
         }
 
