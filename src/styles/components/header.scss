@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 3rem;
+    padding: 2.5rem 6rem;
     z-index: 2;
 
     &__logo {
@@ -30,6 +30,11 @@
             a:visited {
                 text-decoration: none;
                 color: white;
+                font-weight: 500;
+            }
+
+            a:active {
+                color: #ff00f7;
             }
 
             &-active {
@@ -37,6 +42,7 @@
                 box-shadow: 0px 0px 10px #09090991;
                 border-radius: 5rem;
                 color: white;
+                font-weight: 500;
             }
         }
     }

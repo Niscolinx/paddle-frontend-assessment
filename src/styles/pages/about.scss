@@ -51,7 +51,7 @@
                     width: 5rem;
                     height: 2px;
                     left: 0;
-                    top: 47%;
+                    top: 1rem;
                 }
 
                 .span-2 {
@@ -89,7 +89,7 @@
     }
 
     &__section1 {
-        margin: 10rem 0;
+        margin: 15rem 0;
         display: grid;
         justify-content: center;
         grid-column: 1 / -1;
@@ -110,6 +110,7 @@
         display: grid;
         grid-column: 1 / -1;
         grid-template-columns: 1fr 1fr;
+        margin-bottom: 15rem;
 
         .section2-1 {
             display: grid;
@@ -229,6 +230,71 @@
                 font-size: 1.3rem;
                 line-height: 3rem;
             }
+        }
+    }
+
+    &__section3 {
+        position: relative;
+        grid-column: 1 / -1;
+        margin-bottom: 3rem;
+
+        .section3-1 {
+            position: relative;
+            z-index: 2;
+            background: #eddbf021;
+            width: 1920px;
+            height: 463px;
+            backdrop-filter: blur(16px);
+
+            display: grid;
+            justify-content: start;
+            padding-left: 8rem;
+            gap: 2rem;
+            align-content: center;
+
+            &__header {
+                letter-spacing: 0.9px;
+                font-size: 2.8rem;
+                font-weight: 500;
+            }
+
+            &__text {
+                font-size: 1.5rem;
+                font-weight: 300;
+                width: 786px;
+                line-height: 3rem;
+            }
+
+            &__btn {
+                display: flex;
+                align-items: center;
+                align-content: center;
+                gap: 0.5rem;
+
+                button {
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                    color: #ff00f7;
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                }
+
+                &--arrow {
+                    font-size: 1.5rem;
+                    color: #ff00f7;
+                }
+            }
+        }
+
+        .section3-2 {
+            position: absolute;
+            z-index: 1;
+            right: 10rem;
+            top: 6rem;
+            width: 30rem;
+            height: 18rem;
+            background: linear-gradient(180deg, #923f1f 0%, #19073b 100%);
         }
     }
 }

@@ -10,6 +10,7 @@ type LayoutProps = {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
     const router = useRouter()
     const [isComingSoon, setIsComingSoon] = useState(true)
+    const [isBlog, setIsBlog] = useState(false)
 
     useEffect(() => {
         if (router.asPath === '/comingsoon') {
@@ -17,11 +18,18 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         } else {
             setIsComingSoon(false)
         }
+
+        if(router.asPath === '/blog'){
+            setIsBlog(true)
+        }
+        else{
+            setIsBlog(false)
+        }
     }, [router])
 
     return (
         <>
-            <Header isComingSoon={isComingSoon} />
+            <Header isComingSoon={isComingSoon} isBlog={isBlog}/>
             <div className='main'>{children}</div>
 
             <Footer isComingSoon={isComingSoon} />

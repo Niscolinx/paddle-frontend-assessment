@@ -1,0 +1,85 @@
+.cardText {
+    display: grid;
+    gap: 2rem;
+    &__title {
+        width: 469px;
+        height: 63px;
+        font-size: 2.8rem;
+        font-weight: 400;
+    }
+
+    &__text {
+        width: 814px;
+        height: 104px;
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 3rem;
+        text-align: left;
+        text-transform: capitalize;
+    }
+}
+
+.card {
+    padding: 1rem;
+    box-shadow: 0px 0px 30px #00000038;
+    display: grid;
+    justify-content: center;
+    max-width: 538px;
+    
+    img {
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    &__details{
+        display: grid;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+
+    &__date {
+        font-size: 0.8rem;
+        font-weight: 200;
+        letter-spacing: 42;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+
+    &__description {
+        font-size: 1.1rem;
+        font-weight: 200;
+        line-height: 2rem;
+    }
+
+    &__btn {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        &--dash {
+            position: absolute;
+            left: 0;
+            height: 2px;
+            width: 5rem;
+            background-color: #ff00f7;
+
+        }
+
+        &--main {
+            letter-spacing: 0.54px;
+            font-size: .8rem;
+            border: none;
+            outline: none;
+            color: #ff00f7;
+            background-color: white;
+            text-transform: uppercase;
+            margin-left: 6rem;
+        }
+    }
+}

@@ -1,5 +1,6 @@
 import React from 'react'
 import Dots from '../components/Dots'
+import {BsArrowRight} from 'react-icons/bs'
 
 const about = () => {
     return (
@@ -76,6 +77,20 @@ const about = () => {
                     </div>
                     <div className='section2-2__subContainer'></div>
                 </div>
+            </section>
+            <section className='about__section3'>
+                <div className='section3-1'>
+                    <h2 className='section3-1__header'>Got a Question?</h2>
+                    <p className='section3-1__text'>
+                        See how Metricks can help your business grow with best
+                        Affiliate Marketing Tracking Software.
+                    </p>
+                    <div className='section3-1__btn'>
+                        <button>Contact Us</button>
+                        <BsArrowRight className='section3-1__btn--arrow' />
+                    </div>
+                </div>
+                <div className='section3-2'></div>
             </section>
         </div>
     )
