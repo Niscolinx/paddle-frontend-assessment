@@ -29,10 +29,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
     return (
         <>
-            <Header isComingSoon={isComingSoon} isBlog={isBlog}/>
+            <Header isComingSoon={isComingSoon} isBlog={isBlog} />
             <div className='main'>{children}</div>
 
-            <Footer isComingSoon={isComingSoon} />
+            <Footer isComingSoon={isComingSoon} isBlog={isBlog} />
         </>
     )
 }

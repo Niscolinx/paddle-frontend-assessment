@@ -129,8 +129,8 @@
                 row-gap: 4rem;
             }
 
-            &-btn{
-                background-color: #7C0FD5;
+            &-btn {
+                background-color: #7c0fd5;
                 border-radius: 3rem;
                 padding: 1.7rem 4rem;
                 font-size: 1.2rem;
@@ -140,6 +140,83 @@
                 display: grid;
                 margin-top: 5rem;
             }
+        }
+    }
+
+    &__footer {
+        position: relative;
+        grid-column: 1 / -1;
+        display: grid;
+
+         background: linear-gradient(180deg, #213f72 0%, #19073b 100%);
+        
+
+        .footer-1 {
+            position: relative;
+            z-index: 1;
+            width: 1920px;
+            height: 463px;
+            background: linear-gradient(180deg, #213f72 0%, #19073b 100%);
+            display: grid;
+            justify-content: start;
+            padding-left: 8rem;
+            gap: 2rem;
+            align-content: center;
+
+            &__header {
+                letter-spacing: 0.9px;
+                font-size: 2.8rem;
+                font-weight: 500;
+            }
+
+            &__text {
+                font-size: 1.5rem;
+                font-weight: 300;
+                width: 786px;
+                line-height: 3rem;
+            }
+
+            &__btn {
+                display: flex;
+                align-items: center;
+                align-content: center;
+                gap: 0.5rem;
+
+                button {
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                    color: #ff00f7;
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                }
+
+                &--arrow {
+                    font-size: 1.5rem;
+                    color: #ff00f7;
+                }
+            }
+        }
+
+        .footer-2 {
+            position: absolute;
+            z-index: 3;
+            backdrop-filter: blur(16px);
+            width: 557px;
+            height: 318px;
+            right: 5rem;
+            top: 5rem;
+            background: linear-gradient(180deg, #87838724 0%, #55427140 100%) 
+        }
+
+        .footer-3 {
+            position: absolute;
+            z-index: 2;
+            right: 8rem;
+            top: 10rem;
+            width: 17rem;
+            height: 10rem;
+            background: linear-gradient(180deg, #923f1f 0%, #19073b 100%);
         }
     }
 }
